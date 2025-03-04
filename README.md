@@ -2,6 +2,8 @@
 
 This project is a Flask-based web service that fetches events from an Apple public calendar iCal link, filters the events for a specified number of days, and returns the events in a JSON format. The JSON response is formatted to be consumed by TRMNL plugin.
 
+![plugin-2025-03-04T06-41-42Z-dba9a9](https://github.com/user-attachments/assets/0b31e7d5-983c-4232-b049-56d5c1684020)
+
 ## Features
 
 - Fetch events from an Apple public calendar iCal link.
