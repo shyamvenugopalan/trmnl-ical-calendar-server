@@ -1,0 +1,80 @@
+<style>
+    .content .label {
+      font-size: 18px; /* Adjust the font size for labels */
+    }
+    .content .value {
+      font-size: 16px; /* Adjust the font size for values */
+    }
+    .title_bar .title {
+      font-size: 16px; /* Adjust the font size for the title */
+    }
+    .text--black { color: black; }
+    .text--gray-1 { color: #333333; }
+    .text--gray-2 { color: #4d4d4d; }
+    .text--gray-3 { color: #666666; }
+    .text--gray-4 { color: #808080; }
+    .text--gray-5 { color: #999999; }
+    .text--gray-6 { color: #b3b3b3; }
+    .text--gray-7 { color: #cccccc; }
+    .text--white { color: white; }
+    .border--h-7 {
+      border-bottom: 1px solid #ddd;
+      margin: 10px 0;
+    }
+    .column {
+      width: 50%;
+      float: left;
+    }
+    .row {
+      width: 100%;
+      clear: both;
+    }
+  </style>
+  
+  <div class="layout layout--col gap--space-between">
+    <div class="row">
+      <div class="column">
+        <div class="item">
+          <div class="meta"></div>
+          <div class="content">
+            <span class="label text--black">{{ collection[0]["date"] }}</span>
+            <span class="label text--gray-1">{{ collection[0]["event"] }}</span>
+            <span class="value text--gray-3">{{ collection[0]["time"] }}</span>
+          </div>
+        </div>
+        <div class="border--h-7"></div>
+        <div class="item">
+          <div class="meta"></div>
+          <div class="content">
+            <span class="label text--black">{{ collection[1]["date"] }}</span>
+            <span class="label text--gray-1">{{ collection[1]["event"] }}</span>
+            <span class="value text--gray-3">{{ collection[1]["time"] }}</span>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="item">
+          <div class="meta"></div>
+          <div class="content">
+            <span class="label text--black">{{ collection[2]["date"] }}</span>
+            <span class="label text--gray-1">{{ collection[2]["event"] }}</span>
+            <span class="value text--gray-3">{{ collection[2]["time"] }}</span>
+          </div>
+        </div>
+        <div class="border--h-7"></div>
+        <div class="item">
+          <div class="meta"></div>
+          <div class="content">
+            <span class="label text--black">{{ collection[3]["date"] }}</span>
+            <span class="label text--gray-1">{{ collection[3]["event"] }}</span>
+            <span class="value text--gray-3">{{ collection[3]["time"] }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="title_bar">
+    <img class="image" src="https://www.svgrepo.com/show/27855/calendar-and-clock-time-administration-and-organization-tools-symbol.svg">
+    <span class="title text--black">Family Calendar</span>
+  </div>

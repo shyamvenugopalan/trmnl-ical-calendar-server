@@ -1,0 +1,58 @@
+<style>
+    .content .label {
+      font-size: 18px; /* Adjust the font size for labels */
+    }
+    .content .value {
+      font-size: 16px; /* Adjust the font size for values */
+    }
+    .title_bar .title {
+      font-size: 16px; /* Adjust the font size for the title */
+    }
+  </style>
+  <div class="layout layout--col gap--space-between">
+    <div class="columns">
+      <div class="column">
+        <div class="item">
+          <div class="meta"></div>
+          <div class="content">
+            <span class="label label--underline text--black">{{ collection[0]["date"] }}</span>
+            <span class="value">{{ collection[0]["event"] }}</span>
+            <span class="label label--gray-out">{{ collection[0]["time"] }}</span>
+          </div>
+        </div>
+        <div class="border--h-7"></div>
+        <div class="item">
+          <div class="meta"></div>
+          <div class="content">
+            <span class="label label--underline text--black">{{ collection[1]["date"] }}</span>
+            <span class="value">{{ collection[1]["event"] }}</span>
+            <span class="label label--gray-out">{{ collection[1]["time"] }}</span>
+          </div>
+        </div>
+        <div class="border--h-7"></div>
+        <div class="item">
+          <div class="meta"></div>
+          <div class="content">
+            <span class="label label--underline text--black">{{ collection[2]["date"] }}</span>
+            <span class="value">{{ collection[2]["event"] }}</span>
+            <span class="label label--gray-out">{{ collection[2]["time"] }}</span>
+          </div>
+        </div>
+        <div class="border--h-7"></div>
+        <div class="item">
+          <div class="meta"></div>
+          <div class="content">
+            <span class="label label--underline text--black">{{ collection[3]["date"] }}</span>
+            <span class="value">{{ collection[3]["event"] }}</span>
+            <span class="label label--gray-out">{{ collection[3]["time"] }}</span>
+          </div>
+        </div>
+        <div class="border--h-7"></div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="title_bar">
+    <img class="image" src="https://www.svgrepo.com/show/27855/calendar-and-clock-time-administration-and-organization-tools-symbol.svg">
+    <span class="title text--black">Family Calendar</span>
+  </div>

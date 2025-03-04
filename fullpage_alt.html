@@ -1,0 +1,61 @@
+<style>
+  .content .label {
+    font-size: 18px; /* Adjust the font size for labels */
+    font-weight: bold; /* Make the date bold */
+  }
+  .content .value {
+    font-size: 16px; /* Adjust the font size for values */
+  }
+  .title_bar .title {
+    font-size: 16px; /* Adjust the font size for the title */
+  }
+  .border--h-7 {
+    border-bottom: 1px solid #ddd;
+    margin: 10px 0;
+  }
+</style>
+
+<div class="title_bar">
+  <img class="image" src="https://www.svgrepo.com/show/27855/calendar-and-clock-time-administration-and-organization-tools-symbol.svg">
+  <span class="title text--black">Family Calendar</span>
+</div>
+
+<table class="table">
+  <tbody>
+    <tr>
+      <td><span class="label label--inverted text--black">{{ collection[0]["date"] }}</span></td>
+      <td><span class="value value--xsmall text--black clamp--1">{{ collection[0]["event"] }}</span></td>
+      <td><span class="label label--gray-out">{{ collection[0]["time"] }}</span></td>
+    </tr>
+    <tr>
+      <td><span class="label label--inverted text--black">{{ collection[1]["date"] }}</span></td>
+      <td><span class="value value--xsmall text--black clamp--1">{{ collection[1]["event"] }}</span></td>
+      <td><span class="label label--gray-out">{{ collection[1]["time"] }}</span></td>
+    </tr>
+    <tr>
+      <td><span class="label label--inverted text--black">{{ collection[2]["date"] }}</span></td>
+      <td><span class="value value--xsmall text--black clamp--1">{{ collection[2]["event"] }}</span></td>
+      <td><span class="label label--gray-out">{{ collection[2]["time"] }}</span></td>
+    </tr>
+    <tr>
+      <td><span class="label label--inverted text--black">{{ collection[3]["date"] }}</span></td>
+      <td><span class="value value--xsmall text--black clamp--1">{{ collection[3]["event"] }}</span></td>
+      <td><span class="label label--gray-out">{{ collection[3]["time"] }}</span></td>
+    </tr>
+    <tr>
+        <td><span class="label label--inverted text--black">{{ collection[4]["date"] }}</span></td>
+        <td><span class="value value--xsmall text--black clamp--1">{{ collection[4]["event"] }}</span></td>
+        <td><span class="label label--gray-out">{{ collection[4]["time"] }}</span></td>
+    </tr>
+    <tr>
+        <td><span class="label label--inverted text--black">{{ collection[5]["date"] }}</span></td>
+        <td><span class="value value--xsmall text--black clamp--1">{{ collection[5]["event"] }}</span></td>
+        <td><span class="label label--gray-out">{{ collection[5]["time"] }}</span></td>
+    </tr>
+    <tr>
+        <td><span class="label label--inverted text--black">{{ collection[6]["date"] }}</span></td>
+        <td><span class="value value--xsmall text--black clamp--1">{{ collection[6]["event"] }}</span></td>
+        <td><span class="label label--gray-out">{{ collection[6]["time"] }}</span></td>
+    </tr>
+  </tbody>
+</table>
